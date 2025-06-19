@@ -1,0 +1,486 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* é um seletor de formatação universal e aplica-se a todas as tags */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Regra */
+body {
+     font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: #f1f1f1;
+    width: auto;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 0px 20px 0px;
+
+    img {
+        width: 15%;
+    }
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+}
+
+/* Formatação generica para os links */
+a {
+    text-decoration: none;
+    color: #492291;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formatação da Home */
+
+main {
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    padding: 40px 0px 40px 0px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* O ponto (.) indica que destaque é uma classe e não uma tag */
+.destaque {
+    text-align: center;
+
+    p {
+       color: #444;
+       font-size: 1.2rem;
+       line-height: 150%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-style: italic;
+    }
+}
+
+.grid-home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    * {
+        flex-basis: 30%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+}
+
+.card {
+    /* Aplicar sombra */
+    /* 0= deslocamento horizontal, 3px= vertical, 10px= desfoque, rgba= cor */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+    border-radius: 10px;
+    text-align: center;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 160px;
+    }
+
+    h3 {
+        color: #6a3bc8;
+        margin: 15px 0 8px 0;
+    }
+
+    p {
+        font-size: 0.95rem;
+        padding: 0px 10px;
+    }
+}
+
+/* Formata o comportamento do card */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+
+    a {
+        background-color: #aaa;
+        padding: 10px 15px;
+        /* 10px top e bottom, 15px left ne right */
+        text-decoration: none;
+        color: #fff;
+        border-radius: 8px;
+    }
+
+    a:hover {
+        transform: translateY(-2px);
+    }
+
+    /* O nth-child seleciona elementos filhos de uma tag usada no grupo */
+    a:nth-child(1) {
+        background-color: #3b5998;
+        /* Cor para o facebook */
+    }
+
+    a:nth-child(2) {
+        background-color: #ff0000;
+        /* Cor para o youtube */
+    }
+
+    a:nth-child(3) {
+        background: linear-gradient(45deg, #405de6, #5851bb, #833ab4, #c13584, #e1306c, #fd1d1d);
+        /* Cor para o instagram */
+    }
+
+    a:nth-child(4) {
+        background-color: #25d366;
+        /* Cor para o whatsapp */
+    }
+
+    a:nth-child(5) {
+        background-color: #000;
+        /* Cor para o tiktok */
+    }
+}
+
+/* Link voltar ao rodapé das páginas */
+.voltar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Formatação do grid de município */
+.grid-municipio {
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: flex-start;
+
+    div {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 300px;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+
+    }
+
+    h2 {
+        text-align: start;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    h3 {
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    p {
+        line-height: 150%;
+        margin-bottom: 10px;
+    }
+
+    ul,
+    ol {
+        padding-left: 20px;
+        list-style: square;
+
+        li {
+            line-height: 150%;
+        }
+
+    }
+}
+
+/* Formatação do grid de esportes */
+.grid-esportes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    /* Espacamento entre os elementos */
+    * {
+        flex-basis: 30%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+/* Formatação do grid comercio */
+.grid-comercio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    /* Espacamento entre os elementos */
+    * {
+        flex-basis: 30%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+/* Formatação do grid pontos */
+.grid-pontos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    /* Espacamento entre os elementos */
+    * {
+        flex-basis: 40%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+}
+
+/* Formatação das tabelas todas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: start;
+}
+
+/* Formatação tabelas especificas */
+/* Formatação Tabela 1 */
+.tabela1 th {
+    background-color: #aaa;
+    border: 2px solid #aaa;
+    padding: 8px;
+}
+
+.tabela1 td {
+    border: 2px solid #ccc;
+    padding: 8px;
+}
+
+.tabela1 th:nth-child(2),
+.tabela1 td:nth-child(2) {
+    text-align: end;
+    font-weight: 500;
+}
+
+.tabela1 th:nth-child(4),
+.tabela1 td:nth-child(4) {
+    text-align: end;
+    font-weight: 500;
+}
+
+.tabela1 th:nth-child(6),
+.tabela1 td:nth-child(6) {
+    text-align: end;
+    font-weight: 500;
+}
+
+/* Formatação Comentarios e Localização */
+.localizacao {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        flex-basis: 45%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    div:last-child {
+        iframe {
+            width: 100%;
+            height: 65vh;
+        }
+    }
+
+    label {
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: .9rem;
+        margin-top: 20px;
+        color: #555;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        padding: 10px;
+        width: 90%;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+    }
+
+    select {
+        padding: 8px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+    }
+
+    input[type=checkbox] {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    input[type=submit] {
+        border-style: none;
+        background-color: #3b5998;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #000;
+    }
+}
+
+/* Formatação da Galeria de Fotos */
+.galeria-destaque {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 30px 0px 20px 0px;
+
+    img {
+        width: 60%;
+    }
+}
+
+.galeria-miniaturas {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 110px;
+    }
+}
+
+/* Formatação dos Videos e Audios */
+.videos {
+    text-align: center;
+
+    video {
+        width: 70%;
+    }
+
+    iframe {
+        width: 70%;
+        height: 60vh;
+    }
+}
+
+/* Formatação para layout responsivo */
+@media screen and (max-width: 800px) {
+
+    header {
+        background-color: green;
+        img{
+            width: 40%;
+        }
+    }
+    main {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .grid-home {
+        * {
+            flex-basis: 100%;
+        }
+    }
+    
+    .grid-municipio,
+    .grid-esportes,
+    .grid-comercio,
+    .grid-pontos,
+    .localizacao {
+        flex-direction: column;      
+        align-items: center;
+    }
+    
+    .grid-municipio {
+        .card {
+            width: 100%;
+        }
+    
+        div {
+            flex-basis: 100%;
+        }
+    }
+    
+    .localizacao {
+        div:last-child {
+            margin-top: 50px;
+        }
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: .50rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        background-color: yellow;
+    }
+}

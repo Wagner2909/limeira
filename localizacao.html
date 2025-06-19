@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura do Município de Limeira</title>
+    <meta name="description" content="Site de informações sobre a Cidade de Limeira">
+    <link rel="stylesheet" href="style_lim.css">
+</head>
+
+<body>
+    <!-- Esta seção é o cabeçalho (apertar control e ;) -->
+    <header>
+        <img src="fotos/brasao.png" alt="Brasão da Prefeitura">
+    </header>
+
+    <main>
+        <section class="destaque">
+            <h1>Comentários e Localização - Mapas</h1>
+            <p>Comentários e Mapas de Localização</p>
+
+
+        </section>
+
+        <section class="localizacao">
+             <div>
+               <form action="" method="post" name="form1" id="form1">
+                <div>
+                    <label for="">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="">E-mail:</label>
+                    <input type="email" id="correio eletrônico" name="correio eletrônico" required>
+                </div>
+                <div>
+                    <label for="">Sexo:</label>
+                    <input type="radio" id="masculino" name="sexo" value="masc"> Masculino
+                    <input type="radio" id="feminino" name="sexo" value="fem"> Feminino
+                </div>
+                <div>
+                    <label for="">Assunto</label>
+                    <select name="assunto" id="assunto">
+                        <option></option>    
+                        <option>Crítica</option>
+                        <option>Dúvida</option>
+                        <option>Sugestão</option>
+                        <option selected>Elogio</option>
+                        <option>Informação</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Deixe seu Comentário</label>
+                    <textarea name="comentario" id="comentario" rows="6"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="lgpd" id="lgpd" value="sim">
+                    Autorizo o uso dos dados de acordo com a <a href="#">política de privacidade</a>
+                </div>
+                <div>
+                    <input type="submit" name="enviar" id="envia" value="Enviar Dados">
+                </div>
+
+               </form>
+
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1749576034282!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ2N5NXFXY0E.!2m2!1d-22.57210828256127!2d-47.40900458804759!3f250.21993898513426!4f11.623647323535224!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+        </section>
+
+        <section class="voltar">
+            <a href="index_lim.html"> <i class="bi bi-arrow-left-circle-fill"></i> Voltar</a>
+        </section>
+
+
+
+    </main>
+    <footer>
+        &copy; 2025 | Prefeitura de Limeira | Créditos
+    </footer>
+</body>
+
+</html>
